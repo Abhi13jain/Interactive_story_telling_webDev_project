@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #171e28; /* Dark navy blue background */
+            color: #8892B0; /* Light grey text for better contrast */
+            display: flex;
+            align-items: stretch; /* Stretch items to fill the container */
+            justify-content: center; /* Center items horizontally */
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            display: flex; /* Use flexbox layout */
+            width: 100%; /* Full width */
+            height: 100vh; /* Full viewport height */
+        }
+
+        .image-container {
+            flex: 0 0 50%; /* Do not grow or shrink, initial width 50% */
+            height: 100vh; /* Full viewport height */
+            overflow: hidden; /* Hide any overflow */
+        }
+
+        .image-container img {
+            height: 100%; /* Full height of its parent */
+            width: auto; /* Maintain aspect ratio */
+            min-width: 100%; /* Minimum width 100% to cover the space */
+            object-fit: cover; /* Cover the space without stretching */
+        }
+        
+        .text-container {
+            flex: 1; /* Take up the remaining space */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ffffff; /* White text for better visibility */
+            animation: textColorChange 5s infinite alternate; /* Animation for text color change */
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #ffffff; /* White text for better visibility */
+            animation: textColorChange 5s infinite alternate; /* Animation for text color change */
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #ff5e6c; /* Attractive color for the button */
+            color: #ffffff; /* White text */
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff3f4a; /* Darker shade on hover */
+            transform: scale(1.05); /* Slight increase in size on hover */
+        }
+
+        @keyframes textColorChange {
+            0% { color: #ff5e6c; }
+            25% { color: #ffbe0b; }
+            50% { color: #8338ec; }
+            75% { color: #3a86ff; }
+            100% { color: #f10101; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <!-- Replace 'path-to-your-image.jpg' with the actual path to your image -->
+            <img src="homepagef.jpg" alt="Interactive Storytelling Image">
+        </div>
+        <div class="text-container">
+            <h1>&#x2605TaleCraft Studios</h1>
+
+            <p>Embark on an immersive journey into captivating worlds and thrilling adventures.
+             Explore mysterious lands, encounter intriguing characters, and uncover hidden secrets that await you at every turn.
+            </p>
+            <a href="project.html" class="btn">Let's Dive In</a>
+        </div>
+    </div>
+</body>
+</html>

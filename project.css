@@ -1,0 +1,104 @@
+html, body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow: hidden; /* Prevent scrolling */
+}
+#outer {
+    height: calc(100% + 40px); /* Adjusting for header height */
+    width: 100%;
+    background-color: #41C9E2;
+    background-image: url(https://tse3.mm.bing.net/th/id/OIG4.3AB2BmnGhoGhFEbrSlrA?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn);
+    background-size: repeat;
+    overflow: hidden; /* Prevent scrolling */
+    
+}
+#nav{
+    display :flex;
+    /* justify-content:center; */
+    align-items:center; 
+    height:40px;
+    width: 758px;
+    margin:3px;
+    background-color: #74E291;
+    border:2px solid rgb(248, 248, 194);
+    border-radius:10px;
+    overflow: hidden; /* Prevent scrolling */
+}
+#hinfo{
+    display :flex;
+    justify-content:center;
+    align-items:center; 
+    margin-left:20px;
+    color: rgb(221, 13, 13);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:large;
+    font-weight: bolder;
+}
+#top{
+    display:inline-flex;
+    align-items:center;
+    margin-left:380px;
+    text-decoration: none;
+    font-size:10px;
+}
+#show{
+    display:flex;
+}
+#mid{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    height:75%; 
+    width:40%;
+    margin:3px;
+    border:2px solid rgb(248, 248, 194);
+    border-radius:10px;
+    background-color:#59B4C3 ;
+    background-image: url(https://tse3.mm.bing.net/th/id/OIG2.5LSGDvxLjfSdtQtKPFZw?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn);
+    background-size: cover;
+}
+.pic{
+    display:flex;
+    height:125px;
+    width:125px;
+    border:2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px white;
+}
+.mid1{
+    margin:10px;   
+}
+#one{
+    background-image: url(https://tse2.mm.bing.net/th/id/OIG1.jbcMlKHM9dm0KdcWpjp2?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn);
+    background-size: cover  ;
+}
+#two{
+    background-image: url(https://tse3.mm.bing.net/th/id/OIG1.4OOsP80tA0WIsp66hJsn?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn);
+    background-size: cover;
+}
+#three{
+    background-image: url(https://tse1.mm.bing.net/th/id/OIG1.Ek59nxs5rJf9q0m33xWD?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn);
+    background-size: cover;
+}
+#four{
+    background-image: url(https://tse4.mm.bing.net/th/id/OIG2.oddQ7YtqaX.4PGSO7Evo?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn);
+    background-size: cover;
+}
+#side{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:60%;
+    margin:3px;
+    border:2px solid rgb(248, 248, 194);
+    border-radius:10px;
+}
+.press{
+    border: 2px solid rgb(248, 248, 194);
+    margin:10px;
+    border-radius:7px;
+    background-color: #74E291;
+    box-shadow: 0 4px 10px rgb(248, 248, 4);
+    font-weight: bolder;
+}

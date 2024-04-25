@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5E6CA; /* Light beige background */
+            color: #333333; /* Dark gray text */
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1, h2, h3 {
+            color: rgb(206, 24, 85); /* Indigo for headings */
+        }
+
+        form {
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color:rgb(206, 24, 85); /* Indigo for labels */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #8D6E63; /* Brownish border */
+            border-radius: 5px;
+            background-color: #FFEBD6; /* Light peach background */
+            color: #333333; /* Dark gray text */
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: rgb(206, 24, 85); /* Indigo button background */
+            color: #FFFFFF; /* White button text */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: rgb(206, 24, 85); /* Darker indigo on hover */
+        }
+
+        p, ul {
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: rgb(206, 24, 85); /* Indigo for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    
+    <p>Have a question or feedback? Reach out to us using one of the following methods:</p>
+    
+    <!-- Contact Form -->
+    <form action="/submit-contact-form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+    <!-- Contact Information -->
+    <h2>Contact Information</h2>
+    <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+    <p>Phone: +1234567890</p>
+    <p>Address: 123 Storytelling Avenue, City, Country</p>
+    
+    <!-- Social Media Links -->
+    <h2>Connect With Us</h2>
+    <ul>
+        <li><a href="https://www.facebook.com/yourpage">Facebook</a></li>
+        <li><a href="https://twitter.com/yourtwitter">Twitter</a></li>
+        <li><a href="https://www.instagram.com/yourinstagram">Instagram</a></li>
+    </ul>
+    
+    <!-- FAQ Section -->
+    <h2>FAQ</h2>
+    <p>Have a question? Check out our <a href="/faq">FAQ page</a> for answers to common queries.</p>
+    
+    <!-- Response Time -->
+    <p>We typically respond to inquiries within 24-48 hours.</p>
+    
+    <!-- Privacy Policy -->
+    <p>By contacting us, you agree to our <a href="/privacy-policy">Privacy Policy</a>.</p>
+</body>
+</html>

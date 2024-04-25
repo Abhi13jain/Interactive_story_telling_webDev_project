@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Storytelling Gallery</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0A192F; /* Dark navy blue background */
+            color: #8892B0; /* Light grey text for better contrast */
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; /* Changed to space-around for better distribution */
+            gap: 20px;
+            padding: 40px; /* Increased padding for more space */
+            background-color: #112240; /* Slightly lighter navy blue for the gallery background */
+        }
+        .gallery-item {
+            display: flex; /* Changed to flex for side-by-side layout */
+            width: 600px; /* Adjusted width to accommodate image and text side by side */
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow for depth */
+            transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+        }
+        .gallery-item:hover {
+            transform: translateY(-10px); /* Slight lift effect on hover */
+        }
+        .gallery-item img {
+            width: 50%; /* Set image width to take up half of the container */
+            height: auto;
+            display: block;
+        }
+        .gallery-item-content {
+            padding: 20px;
+            background-color: #233554; /* Even lighter navy blue for content background */
+            width: 50%; /* Set content width to take up the remaining half */
+        }
+        h3 {
+            margin-top: 0;
+            color: #64FFDA; /* Bright teal for headings to stand out */
+        }
+        p {
+            color: #8892B0; /* Light grey text for readability */
+        }
+    </style>
+</head>
+<body>
+  <div class="gallery">
+    <div class="gallery-item">
+        <img src="https://tse4.mm.bing.net/th/id/OIG1.Ieu0DRcIJ5Yrx0.9HgZR?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Main Characters">
+        <div class="gallery-item-content">
+            <h3>Main Characters</h3>
+            <p>Meet the main characters of our story! Each character has a unique backstory and plays a crucial role in the plot.</p>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="https://tse3.mm.bing.net/th/id/OIG2.uhm65HH0uJbaH2wrFjpU?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Scenery and Settings">
+        <div class="gallery-item-content">
+            <h3>Environments</h3>
+            <p>Explore the breathtaking landscapes and immersive environments featured in our story. From bustling cities to serene forests, each location adds depth to the narrative.</p>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="https://tse1.mm.bing.net/th/id/OIG3.gC2il9LFlLDLizryJ6nt?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Concept Art">
+        <div class="gallery-item-content">
+            <h3>Concept Art</h3>
+            <p>Discover the early concept artwork that inspired our story. See how ideas evolved and transformed into the rich world you're about to explore.</p>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="https://tse1.mm.bing.net/th/id/OIG3.qImnRCjqGxLEGAtrBEYE?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Interactive Maps">
+        <div class="gallery-item-content">
+            <h3>Interactive Maps</h3>
+            <p>Navigate through the world of our story with interactive maps. Click on different locations to uncover hidden secrets and discover new adventures.</p>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
