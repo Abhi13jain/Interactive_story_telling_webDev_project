@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        html,body {
+            height:100%;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Make the page unscrollable */
+        }
+        #outer{
+            height:100%;
+            width:100%;
+            background-image: url('https://img.freepik.com/free-vector/abstract-background-with-lines_23-2148995947.jpg?size=626&ext=jpg');
+            background-size: contain; /* Ensure the image covers the entire background */
+            background-position: center; 
+            overflow: hidden;
+        }
+        .container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 26%; /* Decrease the width of the container */
+            background-color: rgba(0, 0, 0, 0.6); /* Add transparency to the background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 5px 10px rgb(210, 99, 136); /* Add box shadow */
+        }
+        h3 {
+            text-align: center;
+            color: rgb(210, 99, 136); /* Change text color to light blue */
+        }
+        .form-group {
+            margin-bottom: 15px; /* Decrease the margin bottom */
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            font-size: small;
+            color: rgb(210, 99, 136); /* Change label color to light blue */
+        }
+        .form-group input {
+            width: calc(100% - 30px); /* Set the width of the input fields */
+            margin-left: 10px; /* Center the input fields slightly */
+            padding: 8px; /* Decrease the padding */
+            border: 1px solid rgb(210, 99, 136);
+            border-radius: 8px;
+            color: whitesmoke; /* Change text color to light blue */
+            background-color: rgba(0, 0, 0, 0.3); /* Add transparency to the input background */
+        }
+        .btn-container {
+            text-align: center;
+        }
+        .btn {
+            background-color: rgb(210, 99, 136);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .btn:hover {
+            background-color: rgb(206, 24, 85);
+        }
+    </style>
+</head>
+<body>
+<div id="outer">
+<div class="container">
+    <h3>&#x2605TaleCraft Studios</h3>
+    <form action="signup.php" >
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="btn-container">
+            <button type="submit" class="btn">Sign Up</button>
+        </div>
+    </form>
+</div>
+</div>
+</body>
+</html>
